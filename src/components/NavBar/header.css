@@ -1,0 +1,25 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff; /* Add your desired background color */
+    z-index: 1000; /* Make sure it's on top of other elements */
+    padding: 0 10px;
+    align-items: center;
+    display: flex;
+}
+
+.logo {
+    color: #d46666;
+    font-size: 15px;
+    font-weight: 700;
+    margin-right: 10px;
+}
+
+.title {
+    flex-grow: 1; /* Allow the <p> to grow and take up remaining space */
+    text-align: center; /* Center the text within the <p> element */
+    color: #d46666;
+    text-align: center;
+}
