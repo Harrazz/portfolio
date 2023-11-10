@@ -77,13 +77,14 @@ const Home = () => {
                 </div>
                 <p className="introPara">I am a student of diploma in Computer Science at UiTM Arau</p>
                 <a href="#contact" onClick={() => handleClick(4)}>
-                    <button className="pushable">
+                    <button class="pushable">
+                        <span class="shadow"></span>
                         <span class="edge"></span>
-                        <span className="front">
-                            <span className="contacticon">
+                        <span class="front">
+                            <span className="icon">
                                 <i className="bi bi-telephone-fill"></i>
                             </span>
-                            <span className="contacttext">
+                            <span className="text">
                                 Contact
                             </span>
                         </span>
