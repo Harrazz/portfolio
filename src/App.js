@@ -1,24 +1,23 @@
-import Navbar from "./components/NavBar/navbar";
-import Home from "./components/Home/home";
-import Profiles from "./components/Profile/profile";
-import Footer from "./components/Footer/footer";
-import Skills from "./components/Skills/skills";
-import Contact from "./components/Contact/contact";
-import Projects from "./components/Projects/projects";
+import Navbar from "./components/js/navbar";
+import Home from "./components/js/home";
+import Profiles from "./components/js/profiles";
+import Skills from "./components/js/skills";
+import Projects from "./components/js/projects";
+import Contact from "./components/js/contact";
+import Footer from "./components/js/footer";
 import './app.css'
+
 
 function App() {
   return (
     <div className="App">
       <Navbar />
-      <div className="content">
-        <Home />
-        <Profiles />
-        <Skills />
-        <Projects />
-        <Contact />
-        <Footer />
-      </div>
+      <Home />
+      <Profiles />
+      <Skills />
+      <Projects />
+      <Contact />
+      <Footer />
     </div>
   );
 }

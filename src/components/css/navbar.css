@@ -19,7 +19,7 @@ body {
     display: relative;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    height: 100svh;
     background: var(--clr);
 }
 
@@ -107,7 +107,7 @@ body {
 .navigation ul li a .text {
     position: absolute;
     color: var(--clr);
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 400;
     letter-spacing: 1px;
     transition: 0.5s;

@@ -1,24 +1,28 @@
-import React, { useEffect, useRef } from "react";
-import './home.css'
+import React, { useEffect } from "react";
+import '../css/home.css';
+import resume from '../../assets/resume.pdf'
 import bg from '../../assets/bg.png'
-import bgleft from '../../assets/bgleft.png'
 
 const Home = () => {
-
     const handleClick = (index) => {
-
     }
+
+    const handleDownloadCV = () => {
+        const link = document.createElement('a');
+        link.href = resume;
+        link.setAttribute('download', 'resume.pdf'); // Specify the desired file name
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+    };
 
     //for image animation
     useEffect(() => {
         const handleScroll = () => {
             const scrollValue = window.scrollY;
-
             const bg = document.getElementById('bg');
-            const bgleft = document.getElementById('bgleft');
 
             bg.style.transform = `translateX(${scrollValue * 1.5}px)`;
-            bgleft.style.transform = `translateX(-${scrollValue * 1.5}px)`;
         }
 
         window.addEventListener('scroll', handleScroll);
@@ -31,7 +35,7 @@ const Home = () => {
     // typing effect
     useEffect(() => {
         // Your JavaScript code goes here
-        const dynamicText = document.querySelector("h1 span");
+        const dynamicText = document.querySelector("p1 span");
         const words = ["Student", "Gamer", "Programmer", "Designer"];
 
         let wordIndex = 0;
@@ -64,37 +68,55 @@ const Home = () => {
         typeEffect();
     }, []); // The empty dependency array means this effect will only run once on mount
 
-
     return (
-        <section id="home">
+        <section id="home" className="home">
+            <br></br>
             <div className="homeContent">
-                <span className="hello">Hello,</span>
-                <span className="name"> my name is</span>
-                <span className="myname">Harraz</span>
-                <span className="intro">I am</span>
+                <p className="hello">Hello,</p>
+                <p className="name"> my name is</p>
+                <p className="myname">Harraz</p>
+                <p className="intro">I am</p>
                 <div className="container">
-                    <h1><span className="iam"></span></h1>
+                    <p1><span className="iam"></span></p1>
                 </div>
                 <p className="introPara">I am a student of diploma in Computer Science at UiTM Arau</p>
+
+                <div className="button-container">
                 <a href="#contact" onClick={() => handleClick(4)}>
-                    <button class="pushable">
+                        <button class="pushable">
+                            <span class="shadow"></span>
+                            <span class="edge"></span>
+                            <span class="front">
+                                <span className="icon">
+                                    <i className="bi bi-telephone-fill"></i>
+                                </span>
+                                <span className="text">
+                                    Contact
+                                </span>
+                            </span>
+                        </button>
+                    </a>
+                    <button class="pushable" style={{ marginLeft: '10px' }} onClick={handleDownloadCV}>
                         <span class="shadow"></span>
                         <span class="edge"></span>
                         <span class="front">
                             <span className="icon">
-                                <i className="bi bi-telephone-fill"></i>
+                                <i className="bi bi-download"></i>
                             </span>
                             <span className="text">
-                                Contact
+                                CV
                             </span>
                         </span>
                     </button>
-                </a>
+                </div>
+
+                <div class="shape-blob"></div>
+                <div class="shape-blob one"></div>
+                <div class="shape-blob two"></div>
+                <div class="shape-blob three"></div>
             </div>
             <img src={bg} alt="profile" className="bg" id="bg" />
-            <img src={bgleft} alt="profile" className="bgleft" id="bgleft" />
         </section>
     )
 }
-
 export default Home;

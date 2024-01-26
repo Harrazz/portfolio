@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
-import './navbar.css';
-import './header.css';
+import '../css/navbar.css';
+import '../css/header.css';
 
 const Navbar = () => {
-    const [activeIndex, setActiveIndex] = useState(2); // Set the default active index to 2 for "Home"
+    const [activeIndex, setActiveIndex] = useState(2);
 
     const handleClick = (index) => {
         setActiveIndex(index);
@@ -12,15 +12,14 @@ const Navbar = () => {
     return (
         <div>
             <header className="header">
-                <h2 class="logo">Harraz</h2>
+                <h2 class="logo">Harraz's Portfolio</h2>
             </header>
-
 
             <div className="navbarWrapper">
                 <nav className="navigation">
                     <ul>
                         <li className={`list ${activeIndex === 0 ? 'active' : ''}`}>
-                            <a href="#profile" onClick={() => handleClick(0)}>
+                            <a href="#profiles" onClick={() => handleClick(0)}>
                                 <span className="icon">
                                     <i className="bi bi-person-fill"></i>
                                 </span>
@@ -75,6 +74,6 @@ const Navbar = () => {
             </div>
         </div>
     )
-}
 
+}
 export default Navbar;
