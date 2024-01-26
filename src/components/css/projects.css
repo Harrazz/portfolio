@@ -57,10 +57,11 @@
 
     .link-button {
         font-size: 1.5vh;
-        color: #d46666;
+        color: #fff;
         border-radius: 20px;
         border: 2px solid #d46666;
-        background-color: #ffffff;
+        background-color: #d46666;
+        box-shadow: 0px 0px 3px rgb(0, 0, 0, 0.8);
         cursor: pointer;
         margin: 1%;
         padding: 0 1%;

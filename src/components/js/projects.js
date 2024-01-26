@@ -1,13 +1,13 @@
 import React, { useState } from 'react';
 import '../css/projects.css';
-import workImg1 from '../../assets/sample.jpg';
-import workImg2 from '../../assets/sample.jpg';
-import workImg3 from '../../assets/sample.jpg';
+import workImg1 from '../../assets/brochure.png';
+import workImg2 from '../../assets/portfolio.png';
+import workImg3 from '../../assets/photobooth.png';
 
 const projectData = [
-    { image: workImg1, title: 'DIGITAL BROCHURE', code: 'https://github.com/Nabilah72/Brochure', view: 'https://gfis-online-brochure.netlify.app/#/home' },
-    { image: workImg2, title: 'PORTFOLIO WEBSITE', code: 'https://github.com/Nabilah72/New_Portfolio', view: 'https://portfolio-72.netlify.app/' },
-    { image: workImg3, title: 'PHOTOBOOTH APP', code: 'https://github.com/Nabilah72/Photobooth-App', view: 'https://photoboothappgfis.netlify.app/' },
+    { image: workImg1, title: 'DIGITAL BROCHURE', code: 'https://github.com/Harrazz/BrochureV2', view: 'https://gfis-online-brochure.netlify.app/#/home' },
+    { image: workImg2, title: 'PORTFOLIO WEBSITE', code: 'https://github.com/Harrazz/portfolio', view: 'https://harraz.netlify.app/#home' },
+    { image: workImg3, title: 'PHOTOBOOTH APP', code: 'https://github.com/Harrazz/PhotoboothApp_v2.0', view: 'https://photoboothappgfis.netlify.app/' },
     // { image: workImg4, title: '', info: 'text4', code: 'link', view: '' },
 ];
 
