@@ -68,8 +68,8 @@ const Skills = () => {
                     </span>
                 </p>
                 <div class="circle-container">
-                    <div class="circle percentage-0">
-                        <span class="percentage">0%</span>
+                    <div class="circle percentage-60">
+                        <span class="percentage">60%</span>
                         <span class="software">Photoshop</span>
                         <div class="percentage-bar"></div>
                     </div>

@@ -156,112 +156,6 @@
     }
 
     /* circle progress bar */
-    .circle-container {
-        display: flex;
-        justify-content: center;
-        flex-flow: row wrap;
-        width: 100%;
-    }
-
-    .circle-container .circle {
-        margin: 20px 50px;
-    }
-
-    .circle {
-        width: 200px;
-        height: 200px;
-        cursor: default;
-        position: relative;
-    }
-
-    .circle span {
-        position: absolute;
-        display: block;
-        vertical-align: middle;
-        width: 200px;
-        height: 200px;
-        text-align: center;
-        color: #ffffff;
-        line-height: 200px;
-        font-size: 25px;
-        font-family: Helvetica, Arial, Geneva, sans-serif;
-        transition: font-size 0.2s ease-out;
-    }
-
-    .circle span.percentage {
-        display: block;
-        font-size: 1.2em; /* Adjust the font size as needed */
-        margin-bottom: 0.2em; /* Add margin to create a small gap */
-        text-shadow: 1px 1px 1px #585858,
-            1px 1px 1px #585858,
-            1px 1px 1px #585858,
-            1px 1px 1px #585858,
-            1px 1px 1px rgba(16, 16, 16, 0.4);
-    }
-    
-    .circle span.software {
-        display: block;
-        padding-top: 1.2em;
-        font-size: 0.8em; /* Adjust the font size as needed */
-        z-index: 1;
-        text-shadow: 1px 1px 1px #585858,
-            1px 1px 1px #585858,
-            1px 1px 1px #585858,
-            1px 1px 1px #585858,
-            1px 1px 1px rgba(16, 16, 16, 0.4);
-    }  
-
-    .circle:before {
-        position: absolute;
-        content: "";
-        background-color: transparent;
-        width: 160px;
-        height: 160px;
-        border: 20px solid #DEE2E3;
-        background: transparent;
-        border-radius: 100%;
-        transition: width 0.2s ease-out, height 0.2s ease-out, border-width 0.2s ease-out;
-    }
-
-    .circle .percentage-bar {
-        width: 200px;
-        height: 200px;
-        position: absolute;
-        -webkit-clip-path: inset(0 0 0 50%);
-        clip-path: inset(0 0 0 50%);
-    }
-
-    .circle .percentage-bar:before {
-        position: absolute;
-        content: "";
-        -webkit-clip-path: inset(0 50% 0 0);
-        clip-path: inset(0 50% 0 0);
-        transform: rotate(0deg);
-        width: 160px;
-        height: 160px;
-        border: 20px solid #fb9696;
-        background: transparent;
-        border-radius: 100%;
-        transition: width 0.2s ease-out, height 0.2s ease-out, border-width 0.2s ease-out;
-    }
-
-    .circle:hover:before {
-        width: 180px;
-        height: 180px;
-        border-width: 10px;
-    }
-
-    .circle:hover span {
-        font-size: 45px;
-    }
-
-    .circle:hover .percentage-bar:before,
-    .circle:hover .percentage-bar:after {
-        width: 180px;
-        height: 180px;
-        border-width: 10px;
-    }
-
     .circle.percentage-100 .percentage-bar:after,
     .circle.percentage-99 .percentage-bar:after,
     .circle.percentage-98 .percentage-bar:after,
@@ -317,9 +211,9 @@
         -webkit-clip-path: inset(0 0 0 50%);
         clip-path: inset(0 0 0 50%);
         transform: rotate(0deg);
-        width: 120px;
-        height: 120px;
-        border: 20px solid rgb(206, 116, 116);
+        width: 160px;
+        height: 160px;
+        border: 20px solid #fb9696;
         background: transparent;
         border-radius: 100%;
         transition: width 0.2s ease-out, height 0.2s ease-out, border-width 0.2s ease-out;
@@ -377,6 +271,113 @@
     .circle.percentage-51 .percentage-bar {
         -webkit-clip-path: none;
         clip-path: none;
+    }
+
+    .circle-container {
+        display: flex;
+        justify-content: center;
+        flex-flow: row wrap;
+        width: 100%;
+    }
+
+    .circle-container .circle {
+        margin: 20px 50px;
+    }
+
+    .circle {
+        width: 200px;
+        height: 200px;
+        cursor: default;
+        position: relative;
+    }
+
+    .circle span {
+        position: absolute;
+        display: block;
+        vertical-align: middle;
+        width: 200px;
+        height: 200px;
+        text-align: center;
+        color: #ffffff;
+        line-height: 200px;
+        font-size: 25px;
+        font-family: Helvetica, Arial, Geneva, sans-serif;
+        transition: font-size 0.2s ease-out;
+    }
+
+    .circle:before {
+        position: absolute;
+        content: "";
+        background-color: transparent;
+        width: 160px;
+        height: 160px;
+        border: 20px solid #DEE2E3;
+        background: transparent;
+        border-radius: 100%;
+        transition: width 0.2s ease-out, height 0.2s ease-out, border-width 0.2s ease-out;
+    }
+
+    .circle .percentage-bar {
+        width: 200px;
+        height: 200px;
+        position: absolute;
+        -webkit-clip-path: inset(0 0 0 50%);
+        clip-path: inset(0 0 0 50%);
+    }
+
+    .circle .percentage-bar:before {
+        position: absolute;
+        content: "";
+        -webkit-clip-path: inset(0 50% 0 0);
+        clip-path: inset(0 50% 0 0);
+        transform: rotate(0deg);
+        width: 160px;
+        height: 160px;
+        border: 20px solid #fb9696;
+        background: transparent;
+        border-radius: 100%;
+        transition: width 0.2s ease-out, height 0.2s ease-out, border-width 0.2s ease-out;
+    }
+
+    .circle:hover:before {
+        width: 180px;
+        height: 180px;
+        border-width: 10px;
+    }
+
+    .circle:hover span {
+        font-size: 45px;
+    }
+
+    .circle:hover .percentage-bar:before,
+    .circle:hover .percentage-bar:after {
+        width: 180px;
+        height: 180px;
+        border-width: 10px;
+    }
+
+    .circle span.percentage {
+        display: block;
+        /* Adjust the font size as needed */
+        margin-bottom: 0.2em;
+        /* Add margin to create a small gap */
+        text-shadow: 1px 1px 1px #585858,
+            1px 1px 1px #585858,
+            1px 1px 1px #585858,
+            1px 1px 1px #585858,
+            1px 1px 1px rgba(16, 16, 16, 0.4);
+    }
+
+    .circle span.software {
+        display: block;
+        padding-top: 1.2em;
+        /* Adjust the font size as needed */
+        z-index: 1;
+        text-shadow: 1px 1px 1px #585858,
+            1px 1px 1px #585858,
+            1px 1px 1px #585858,
+            1px 1px 1px #585858,
+            1px 1px 1px rgba(16, 16, 16, 0.4);
     }
 
     .circle.percentage-1 .percentage-bar:before {
