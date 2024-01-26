@@ -28,27 +28,27 @@ const Skills = () => {
                     </p>
                     <div class="bars">
                         <div>
-                            <p className="bar">HTML .progress-bar-10</p>
-                            <div class="progress-bar2 progress-bar-10" style={{ marginRight: '12px' }}></div>
+                            <p className="bar">HTML 80%</p>
+                            <div class="progress-bar2 progress-bar-80" style={{ marginRight: '12px' }}></div>
                         </div>
                         <div>
-                            <p className="bar">CSS .progress-bar-20</p>
-                            <div class="progress-bar2 progress-bar-20" style={{ marginRight: '12px' }}></div>
+                            <p className="bar">CSS 80%</p>
+                            <div class="progress-bar2 progress-bar-80" style={{ marginRight: '12px' }}></div>
                         </div>
                         <div>
-                            <p className="bar">Java .progress-bar-30</p>
-                            <div class="progress-bar2 progress-bar-30" style={{ marginRight: '12px' }}></div>
+                            <p className="bar">JavaScript 70%</p>
+                            <div class="progress-bar2 progress-bar-70" style={{ marginRight: '12px' }}></div>
                         </div>
                         <div>
-                            <p className="bar">C++ .progress-bar-40</p>
-                            <div class="progress-bar2 progress-bar-40" style={{ marginRight: '12px' }}></div>
+                            <p className="bar">C++ 70%</p>
+                            <div class="progress-bar2 progress-bar-70" style={{ marginRight: '12px' }}></div>
                         </div>
                         <div>
-                            <p className="bar">.progress-bar-50</p>
-                            <div class="progress-bar2 progress-bar-50" style={{ marginRight: '12px' }}></div>
+                            <p className="bar">Java 60%</p>
+                            <div class="progress-bar2 progress-bar-60" style={{ marginRight: '12px' }}></div>
                         </div>
                         <div>
-                            <p className="bar">.progress-bar-60</p>
+                            <p className="bar">Python 60%</p>
                             <div class="progress-bar2 progress-bar-60" style={{ marginRight: '12px' }}></div>
                         </div>
 
@@ -74,20 +74,20 @@ const Skills = () => {
                         <div class="percentage-bar"></div>
                     </div>
 
-                    <div class="circle percentage-12">
-                        <span class="percentage">12%</span>
+                    <div class="circle percentage-80">
+                        <span class="percentage">80%</span>
                         <span class="software">Canva</span>
                         <div class="percentage-bar"></div>
                     </div>
 
-                    <div class="circle percentage-34">
-                        <span class="percentage">34%</span>
-                        <span class="software">VSCode</span>
+                    <div class="circle percentage-75">
+                        <span class="percentage">75%</span>
+                        <span class="software">Microsoft Office</span>
                         <div class="percentage-bar"></div>
                     </div>
 
-                    <div class="circle percentage-50">
-                        <span class="percentage">50%</span>
+                    <div class="circle percentage-60">
+                        <span class="percentage">60%</span>
                         <span class="software">Illustrator</span>
                         <div class="percentage-bar"></div>
                     </div>
