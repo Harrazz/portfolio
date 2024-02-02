@@ -17,11 +17,11 @@ const Projects = () => {
     const [currentCard, setCurrentCard] = useState(0);
 
     const handleNext = () => {
-        setCurrentCard((prevCard) => (prevCard + 1) % 3);
+        setCurrentCard((prevCard) => (prevCard + 1) % 4);
     };
 
     const handlePrev = () => {
-        setCurrentCard((prevCard) => (prevCard - 1 + 3) % 3);
+        setCurrentCard((prevCard) => (prevCard - 1 + 4) % 4);
     };
 
     const transformValue = `translateX(${-currentCard * 100}%)`;
