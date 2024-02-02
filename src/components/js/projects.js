@@ -9,7 +9,7 @@ const projectData = [
     { image: workImg1, title: 'DIGITAL BROCHURE', code: 'https://github.com/Harrazz/BrochureV2', view: 'https://gfis-online-brochure.netlify.app/#/home' },
     { image: workImg2, title: 'PORTFOLIO WEBSITE', code: 'https://github.com/Harrazz/portfolio', view: 'https://harraz.netlify.app/#home' },
     { image: workImg3, title: 'PHOTOBOOTH APP', code: 'https://github.com/Harrazz/PhotoboothApp_v2.0', view: 'https://photoboothappgfis.netlify.app/' },
-    { image: workImg3, title: 'BACKDROP AN', code: 'https://github.com/Harrazz/Backdrop-AN', view: 'https://backdrop-an.netlify.app/' },
+    { image: workImg4, title: 'BACKDROP AN', code: 'https://github.com/Harrazz/Backdrop-AN', view: 'https://backdrop-an.netlify.app/' },
     // { image: workImg4, title: '', info: 'text4', code: 'link', view: '' },
 ];
 
