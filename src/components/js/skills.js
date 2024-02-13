@@ -17,41 +17,38 @@ const Skills = () => {
 
             <br></br>
             <div className="skill-container">
-                <div class="wrap">
-                    <p class="text-center">
-                        <span className="icon">
-                            <i className="bi bi-code"></i>
-                        </span>
-                        <span className="text">
-                            Programming Skills
-                        </span>
-                    </p>
-                    <div class="bars">
-                        <div>
-                            <p className="bar">HTML 80%</p>
-                            <div class="progress-bar2 progress-bar-80" style={{ marginRight: '12px' }}></div>
-                        </div>
-                        <div>
-                            <p className="bar">CSS 80%</p>
-                            <div class="progress-bar2 progress-bar-80" style={{ marginRight: '12px' }}></div>
-                        </div>
-                        <div>
-                            <p className="bar">JavaScript 70%</p>
-                            <div class="progress-bar2 progress-bar-70" style={{ marginRight: '12px' }}></div>
-                        </div>
-                        <div>
-                            <p className="bar">C++ 70%</p>
-                            <div class="progress-bar2 progress-bar-70" style={{ marginRight: '12px' }}></div>
-                        </div>
-                        <div>
-                            <p className="bar">Java 60%</p>
-                            <div class="progress-bar2 progress-bar-60" style={{ marginRight: '12px' }}></div>
-                        </div>
-                        <div>
-                            <p className="bar">Python 60%</p>
-                            <div class="progress-bar2 progress-bar-60" style={{ marginRight: '12px' }}></div>
-                        </div>
-
+                <p class="text-center">
+                    <span className="icon">
+                        <i className="bi bi-code"></i>
+                    </span>
+                    <span className="text">
+                        Programming Skills
+                    </span>
+                </p>
+                <div className="row">
+                    <div className="skills">
+                        <i className="bi bi-filetype-html"></i>
+                        <h2>HTML</h2>
+                    </div>
+                    <div className="skills">
+                        <i className="bi bi-filetype-css"></i>
+                        <h2>CSS</h2>
+                    </div>
+                    <div className="skills">
+                        <i className="bi bi-filetype-js"></i>
+                        <h2>JAVASCRIPT</h2>
+                    </div>
+                    <div className="skills">
+                        <i className="bi bi-filetype-cs"></i>
+                        <h2>C++/C</h2>
+                    </div>
+                    <div className="skills">
+                        <i className="bi bi-filetype-java"></i>
+                        <h2>JAVA</h2>
+                    </div>
+                    <div className="skills">
+                        <i className="bi bi-filetype-py"></i>
+                        <h2>PYTHON</h2>
                     </div>
                 </div>
 
@@ -67,31 +64,31 @@ const Skills = () => {
                         Software Skills
                     </span>
                 </p>
-                <div class="circle-container">
-                    <div class="circle percentage-60">
-                        <span class="percentage">60%</span>
-                        <span class="software">Photoshop</span>
-                        <div class="percentage-bar"></div>
+                <div className="row">
+                    <div className="skills">
+                        <i className="bi bi-camera"></i>
+                        <h2>ADOBE PHOTOSHOP</h2>
                     </div>
-
-                    <div class="circle percentage-80">
-                        <span class="percentage">80%</span>
-                        <span class="software">Canva</span>
-                        <div class="percentage-bar"></div>
+                    <div className="skills">
+                        <i className="bi bi-emoji-laughing"></i>
+                        <h2>ADOBE ILLUSTRATOR</h2>
                     </div>
-
-                    <div class="circle percentage-75">
-                        <span class="percentage">75%</span>
-                        <span class="software">Microsoft Office</span>
-                        <div class="percentage-bar"></div>
+                    <div className="skills">
+                        <i className="bi bi-easel"></i>
+                        <h2>CANVA</h2>
                     </div>
-
-                    <div class="circle percentage-60">
-                        <span class="percentage">60%</span>
-                        <span class="software">Illustrator</span>
-                        <div class="percentage-bar"></div>
+                    <div className="skills">
+                        <i className="bi bi-file-earmark-ppt"></i>
+                        <h2>MICROSOFT POWERPOINT</h2>
                     </div>
-
+                    <div className="skills">
+                        <i className="bi bi-file-earmark-word"></i>
+                        <h2>MICROSOFT WORD</h2>
+                    </div>
+                    <div className="skills">
+                        <i className="bi bi-file-earmark-excel"></i>
+                        <h2>MICROSOFT EXCEL</h2>
+                    </div>
                 </div>
             </div>
         </section>

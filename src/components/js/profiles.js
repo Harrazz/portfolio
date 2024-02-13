@@ -68,6 +68,11 @@ const Profiles = () => {
                                     <li><span>Arau, Perlis</span><br />Multimedia / Photographer for COSMITs event in UiTM</li>
                                     <br />
                                 </div>
+                                <div className='box'>
+                                    <h2>29 - 31 January 2024</h2>
+                                    <li><span>Sheraton, Kuala Lumpur</span><br />Registration Committee for Asia Navigator 2024</li>
+                                    <br />
+                                </div>
                             </ul>
                         </div>
                     </div>
