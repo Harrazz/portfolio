@@ -28,9 +28,9 @@ const Profiles = () => {
                     <div className="profile-col-1">
                     </div>
                     <div className="profile-col-2">
-                        <h1 className='aboutme'>About Me</h1><br/>
+                        <h1 className='aboutme'>About Me</h1><br />
                         <p className='ptext'> I am a practical trainee in the field of computer and information sciences at GFIS Sdn. Bhd. in order to experience the workplace environment as well as for self-development.</p>
-                        <br/>
+                        <br />
                         <div className="tab-titles">
                             <p className={`tab-subtitle ${activeTab === 'edu' ? 'p-active-link' : ''}`}
                                 onClick={() => openTab('edu')}>
@@ -59,6 +59,11 @@ const Profiles = () => {
                         <div className={`tab-contents ${activeTab === 'exp' ? 'active-tab' : ''}`} id="exp">
                             <ul>
                                 <div className='box'>
+                                    <h2>29 - 31 January 2024</h2>
+                                    <li><span>Sheraton, Kuala Lumpur</span><br />Registration Committee for Asia Navigator 2024</li>
+                                    <br />
+                                </div>
+                                <div className='box'>
                                     <h2>18 Sept 2023 - 01 March 2024</h2>
                                     <li><span>Cyberjaya, Selangor</span><br />Internship at GFIS Innovative Solutions Sdn Bhd</li>
                                     <br />
@@ -66,11 +71,6 @@ const Profiles = () => {
                                 <div className='box'>
                                     <h2>August 2021 - July 2023</h2>
                                     <li><span>Arau, Perlis</span><br />Multimedia / Photographer for COSMITs event in UiTM</li>
-                                    <br />
-                                </div>
-                                <div className='box'>
-                                    <h2>29 - 31 January 2024</h2>
-                                    <li><span>Sheraton, Kuala Lumpur</span><br />Registration Committee for Asia Navigator 2024</li>
                                     <br />
                                 </div>
                             </ul>
