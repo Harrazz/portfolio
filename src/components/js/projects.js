@@ -4,12 +4,14 @@ import workImg1 from '../../assets/brochure.png';
 import workImg2 from '../../assets/portfolio.png';
 import workImg3 from '../../assets/photobooth.png';
 import workImg4 from '../../assets/backdrop-AN.png';
+import workImg5 from '../../assets/Demo PTA.png';
 
 const projectData = [
     { image: workImg1, title: 'DIGITAL BROCHURE', code: 'https://github.com/Harrazz/BrochureV2', view: 'https://gfis-online-brochure.netlify.app/#/home' },
     { image: workImg2, title: 'PORTFOLIO WEBSITE', code: 'https://github.com/Harrazz/portfolio', view: 'https://harraz.netlify.app/#home' },
     { image: workImg3, title: 'PHOTOBOOTH APP', code: 'https://github.com/Harrazz/PhotoboothApp_v2.0', view: 'https://photoboothappgfis.netlify.app/' },
     { image: workImg4, title: 'BACKDROP AN', code: 'https://github.com/Harrazz/Backdrop-AN', view: 'https://backdrop-an.netlify.app/' },
+    { image: workImg5, title: 'PTA DEMO VIDEO', view: 'https://www.youtube.com/watch?v=p-jjWWIgy0k' },
     // { image: workImg4, title: '', info: 'text4', code: 'link', view: '' },
 ];
 
@@ -17,11 +19,11 @@ const Projects = () => {
     const [currentCard, setCurrentCard] = useState(0);
 
     const handleNext = () => {
-        setCurrentCard((prevCard) => (prevCard + 1) % 4);
+        setCurrentCard((prevCard) => (prevCard + 1) % 5);
     };
 
     const handlePrev = () => {
-        setCurrentCard((prevCard) => (prevCard - 1 + 4) % 4);
+        setCurrentCard((prevCard) => (prevCard - 1 + 5) % 5);
     };
 
     const transformValue = `translateX(${-currentCard * 100}%)`;
